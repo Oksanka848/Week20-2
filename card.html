@@ -6,106 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/card.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
 </head>
 <body>
-    <p class="text-grey-darker text-xs mb-8">Responsive cards (1 / 2 / 3 cols); card footer; css flex properties for equal heights. Unsplash photos.</p>
-<div class="flex flex-wrap -m-3"> 
-  
-  
-  <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-      <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="
-">
-        <h3 class="mb-4 text-2xl">My heading</h3>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        </div>
-        <a href="#" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="
-">Twitter</a>
+  <section class="cards">
+    <article class="card card--1">
+      <div class="card__info-hover">
+        
+          <div class="card__clock-info">
+            <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+            </svg><span class="card__time">15 min</span>
+          </div>
+        
       </div>
-    </div>  
-  </div>
-  
-  <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-      <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1497398276231-94ff5dc90217?w=900);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="
-">
-        <h3 class="mb-4 text-2xl">My much longer heading</h3>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="#" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="
-">Twitter</a>
+      <div class="card__img"></div>
+      <a href="#" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category"> Recipe</span>
+        <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
+        <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
       </div>
-    </div>  
-  </div>
-  
-  <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-      <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1503863937795-62954a3c0f05?w=900);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="
-">
-        <h3 class="mb-4 text-2xl">My heading</h3>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Shorter text.</p>
-        </div>
-        <a href="#" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="
-">Twitter</a>
+    </article>
+      
+      
+    <article class="card card--2">
+      <div class="card__info-hover">
+        
+          <div class="card__clock-info">
+            <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+            </svg><span class="card__time">5 min</span>
+          </div>
+        
       </div>
-    </div>  
-  </div>
-  
-  <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-      <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1511084901824-1c57f5a16c98?w=900);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="
-">
-        <h3 class="mb-4 text-2xl">My heading</h3>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Shorter text.</p>
-        </div>
-        <a href="#" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="
-">Twitter</a>
+      <div class="card__img"></div>
+      <a href="#" class="card_link">
+         <div class="card__img--hover"></div>
+       </a>
+      <div class="card__info">
+        <span class="card__category"> Travel</span>
+        <h3 class="card__title">Discover the sea</h3>
+        <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
       </div>
-    </div>  
-  </div>
-  
-  <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-      <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1525935944571-4e99237764c9?w=900);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="
-">
-        <h3 class="mb-4 text-2xl">My heading</h3>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="#" class="border-t border-grey-light pt-2  text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="
-">Twitter</a>
-      </div>
-    </div>  
-  </div>
-  
-  <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-      <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1486506574467-c44963fc7876?w=900);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">My heading</h3>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Longer content.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="#" class="border-t border-grey-light pt-2  text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="
-">Twitter</a>
-      </div>
-    </div>  
-  </div>
-  
-    
-</div>
+    </article>  
+      
+      
+      
+      </section>  
+
+
     <script src="/card.js"></script>
 </body>
 </html>
