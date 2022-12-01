@@ -1,4 +1,4 @@
-let superherous = `[{
+let superherous = [
 
   {
     "name": "Бэтмен",
@@ -102,10 +102,12 @@ let superherous = `[{
     "powers":
       "высокий болевой порог, регенерация и бессмертие, сверхчеловеческая иммунная система",
   }
-]`;
+];
 
 document.addEventListener("DOMContentLoaded", function()  {
-     let cards=JSON.parse(superherous);
+    
+     let cardssuper=JSON.stringify(superherous);
+let cards = JSON.parse(cardssuper);
      let cardscontent = "";
      for (let card of cards) {
         cardscontent+=`
