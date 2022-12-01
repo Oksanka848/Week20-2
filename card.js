@@ -93,7 +93,7 @@ let superherous = [
   },
 
 
-  {"avatar": "",
+  { "avatar": "src=" " ,
     "name": "Дэдпул",
     "univers": "Marvel Comics",
     "alterago": "Уэйд Уинстон Уилсон",
@@ -111,12 +111,12 @@ let cards = JSON.parse(cardssuper);
      let cardscontent = "";
      for (let card of cards) {
         cardscontent+=`
-        <article class="card card--10">
+        <article class="card"><img src="/${card.avatar}/>
           <div class="card__info-hover"></div>
           <div class="card__img"></div>
           
-          <a href="#" class="card_link">
-             <div class="card__img--hover"></div></a>
+          
+             <div class="card__img--hover"></div>
                 <div class="card__info">
             <p class="card__category">${card.name}</p>
             <p class="card__title">Вселенная: <strong>${card.univers}</strong></p>
@@ -131,7 +131,8 @@ let cards = JSON.parse(cardssuper);
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
           </div>
-        </article>`;
+          </article>
+        `;
              }
              document.getElementById('cardscontent').innerHTML = cardscontent;
             });
