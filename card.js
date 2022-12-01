@@ -1,6 +1,7 @@
 let superherous = [
 
   {
+    "avatar": "https://n1s1.hsmedia.ru/13/a5/b2/13a5b2373d5e23489d9a4949ada5b927/547x397_0xac120002_8752067681540468870.jpg" ,
     "name": "Бэтмен",
     "univers": "DC Comics",
     "alterago": "Брюс Уэйн",
@@ -93,7 +94,7 @@ let superherous = [
   },
 
 
-  { "avatar": "src=" " ,
+  { //"avatar": "src="/ " ,
     "name": "Дэдпул",
     "univers": "Marvel Comics",
     "alterago": "Уэйд Уинстон Уилсон",
@@ -111,12 +112,12 @@ let cards = JSON.parse(cardssuper);
      let cardscontent = "";
      for (let card of cards) {
         cardscontent+=`
-        <article class="card"><img src="/${card.avatar}/>
+        <article class="card"><img src="${card.avatar}>
           <div class="card__info-hover"></div>
           <div class="card__img"></div>
           
           
-             <div class="card__img--hover"></div>
+             
                 <div class="card__info">
             <p class="card__category">${card.name}</p>
             <p class="card__title">Вселенная: <strong>${card.univers}</strong></p>
@@ -125,14 +126,14 @@ let cards = JSON.parse(cardssuper);
             <p class="card__title">Друзья: <strong>${card.friens}</strong></p>
             <p class="card__title">Суперсилы: <strong>${card.powers}</strong></p>
             <span class="card__by"> <a href="#" class="card__author" title="author">RATE</a></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+            <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
           </div>
           </article>
         `;
              }
-             document.getElementById('cardscontent').innerHTML = cardscontent;
+             document.getElementById('cardscontent').innerHTML += cardscontent;
             });
