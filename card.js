@@ -93,7 +93,7 @@ let superherous = [
   },
 
 
-  {
+  {"avatar": "",
     "name": "Дэдпул",
     "univers": "Marvel Comics",
     "alterago": "Уэйд Уинстон Уилсон",
@@ -114,6 +114,7 @@ let cards = JSON.parse(cardssuper);
         <article class="card card--10">
           <div class="card__info-hover"></div>
           <div class="card__img"></div>
+          
           <a href="#" class="card_link">
              <div class="card__img--hover"></div></a>
                 <div class="card__info">
