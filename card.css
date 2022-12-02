@@ -182,6 +182,9 @@ body {
   opacity: 1;
 }
 
+.unchecked {
+  color: blanchedalmond;
+}
 .checked {
-  color: orange;
+  color: yellow;
 }
