@@ -135,15 +135,28 @@ let cards = JSON.parse(cardssuper);
             <p class="card__title">Род деятельности: <strong>${card.job}</strong></p>
             <p class="card__title">Друзья: <strong>${card.friens}</strong></p>
             <p class="card__title">Суперсилы: <strong>${card.powers}</strong></p>
-            <span class="card__by"> <a href="#" class="card__author" title="author">RATE</a></span>
-            <span class="fa fa-star unchecked"></span>
-        <span class="fa fa-star unchecked"></span>
-        <span class="fa fa-star unchecked"></span>
-        <span class="fa fa-star unchecked"></span>
-        <span class="fa fa-star unchecked"></span>
+            <label class="card__by"> <a href="#" class="card__author" title="author">RATE</a></label>
+            <div class="rate_background" name='rate' onclick="set_rate(arguments[0], this);">
+    <div class="rate_bar" name='rate' style="width:50%;"></div>
+</div>
+
           </div>
           </article>
         `;
              }
              document.getElementById('cardscontent').innerHTML += cardscontent;
+             let onrate=document.addEventListener('click',
+             function set_rate(event, el) {
+              
+               if (event.clientX<=el.clientWidth) {
+                   var rate=Math.ceil(event.clientX/el.clientWidth*5);
+           
+                  
+                   
+                   el.getElementsByName('rate')[0].style.width=rate*20+'%';
+               }
+           }
+             );
+          
             });
+            
