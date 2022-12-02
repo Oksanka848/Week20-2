@@ -1,7 +1,7 @@
 let superherous = [
 
   {
-    "avatar": "https://n1s1.hsmedia.ru/13/a5/b2/13a5b2373d5e23489d9a4949ada5b927/547x397_0xac120002_8752067681540468870.jpg" ,
+    "avatar": "card--1",
     "name": "Бэтмен",
     "univers": "DC Comics",
     "alterago": "Брюс Уэйн",
@@ -11,6 +11,7 @@ let superherous = [
   },
 
   {
+    "avatar": "card--2",
     "name": "Супермен",
     "univers": "DC Comics",
     "alterago": "Кларк Кент",
@@ -21,6 +22,7 @@ let superherous = [
   },
 
   {
+    "avatar": "card--3",
     "name": "Железный человек",
     "univers": "Marvel Comics",
     "alterago": "Тони Старк",
@@ -32,6 +34,7 @@ let superherous = [
 
 
   {
+    "avatar": "card--4",
     "name": "Спайдер-мен/Человек-паук",
     "univers": "Marvel Comics",
     "alterago": "Питер Паркер",
@@ -43,6 +46,7 @@ let superherous = [
 
 
   {
+    "avatar": "card--5",
     "name": "Капитан Америка",
     "univers": "Marvel Comics",
     "alterago": "Стивен Роджерс",
@@ -54,6 +58,7 @@ let superherous = [
 
 
   {
+    "avatar": "card--6",
     "name": "Тор",
     "univers": "Marvel Comics",
     "alterago": "нет; полное имя — Тор Одинсон",
@@ -64,6 +69,7 @@ let superherous = [
 
 
   {
+    "avatar": "card--7",
     "name": "Халк",
     "univers": "Marvel Comics",
     "alterago": "Брюс Беннер",
@@ -74,6 +80,7 @@ let superherous = [
 
 
   {
+    "avatar": "card--8",
     "name": "Чудо-женщина",
     "univers": "DC Comics",
     "alterago": "Диана Принс",
@@ -84,6 +91,7 @@ let superherous = [
 
 
   {
+    "avatar": "card--9",
     "name": "Черная вдова",
     "univers": "Marvel Comics",
     "alterago": "Наташа Романофф",
@@ -94,7 +102,8 @@ let superherous = [
   },
 
 
-  { //"avatar": "src="/ " ,
+  { 
+    "avatar": "card--10",
     "name": "Дэдпул",
     "univers": "Marvel Comics",
     "alterago": "Уэйд Уинстон Уилсон",
@@ -112,10 +121,11 @@ let cards = JSON.parse(cardssuper);
      let cardscontent = "";
      for (let card of cards) {
         cardscontent+=`
-        <article class="card"><img src="${card.avatar}>
+        <article class="card ${card.avatar}"> 
           <div class="card__info-hover"></div>
           <div class="card__img"></div>
-          
+          <a href="#" class="card_link">
+         <div class="card__img--hover"></div></a>
           
              
                 <div class="card__info">
