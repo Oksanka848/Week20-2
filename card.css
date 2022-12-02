@@ -162,7 +162,8 @@ body {
 }
 
 .card__author {
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 1.2em;
   text-decoration: none;
   color: #ad7d52;
   font-weight: bold;
@@ -182,30 +183,34 @@ body {
   opacity: 1;
 }
 
-.unchecked {
-  color: blanchedalmond;
+.star-rating {
+  font-size: 0;
 }
-.checked {
-  color: yellow;
+.star-rating__wrap {
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  margin-top: 5%;
 }
-
-/* внешний контейнер - фон с серыми звездочками */
-
-  .rate_background {
-    position: relative;
-    width: 160px;
-    height: 32px;
-    background:url('assets/star_gray.png') repeat-x;
-    cursor: pointer;
+.star-rating__wrap:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-/* внутренний контейнер - полоса рейтинга с золотыми звездочками */
-.rate_bar {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 32px;
-  background:url('assets/star_gold.png') repeat-x;
+.star-rating__ico {
+  float: right;
+  padding-left: 2px;
+  cursor: pointer;
+  color: #ffb300;
 }
-
-/*https://www.manhunter.ru/webmaster/992_reyting_na_css_i_javascript.html*/
+.star-rating__ico:last-child {
+  padding-left: 0;
+}
+.star-rating__input {
+  display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+  content: "\f005";
+}

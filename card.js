@@ -135,28 +135,38 @@ let cards = JSON.parse(cardssuper);
             <p class="card__title">Род деятельности: <strong>${card.job}</strong></p>
             <p class="card__title">Друзья: <strong>${card.friens}</strong></p>
             <p class="card__title">Суперсилы: <strong>${card.powers}</strong></p>
-            <label class="card__by"> <a href="#" class="card__author" title="author">RATE</a></label>
-            <div class="rate_background" name='rate' onclick="set_rate(arguments[0], this);">
-    <div class="rate_bar" name='rate' style="width:50%;"></div>
-</div>
+            <label class="card__by"> <a class="card__author" title="author">RATE</a></label>
+            
+            <div class="star-rating">
+      <div class="star-rating__wrap">
 
+      <input class="star-rating__input" id="star-rating-8" type="radio" name="rating" value="8">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-8" title="8 out of 8 stars"></label>
+      <input class="star-rating__input" id="star-rating-7" type="radio" name="rating" value="7">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-7" title="7 out of 8 stars"></label>
+        <input class="star-rating__input" id="star-rating-6" type="radio" name="rating" value="6">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-6" title="6 out of 8 stars"></label>
+        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 8 stars"></label>
+        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 8 stars"></label>
+        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 8 stars"></label>
+        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 8 stars"></label>
+        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 8 stars"></label>
+        </div>
+    </div>
           </div>
           </article>
+          
         `;
              }
              document.getElementById('cardscontent').innerHTML += cardscontent;
-             let onrate=document.addEventListener('click',
-             function set_rate(event, el) {
-              
-               if (event.clientX<=el.clientWidth) {
-                   var rate=Math.ceil(event.clientX/el.clientWidth*5);
-           
-                  
-                   
-                   el.getElementsByName('rate')[0].style.width=rate*20+'%';
-               }
-           }
-             );
+             
           
             });
             
+            
+                 
