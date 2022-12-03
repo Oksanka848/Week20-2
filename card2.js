@@ -21,3 +21,18 @@ const content = target.style.content;
     const target = event.target; // what you clicked on
     event.target = document.querySelector('.star-rating__ico');
     event.target.style.color= "red";
+    let data = {target};
+    this.localStorage.setItem('formData',JSON.stringify(data));
+
+
+    localStorage.setItem('formData',JSON.stringify(data));           
+              const getFormdata = (key) => {  
+                return localStorage.getItem(key);    }
+                const formData = JSON.parse(getFormdata ('formData'));
+                const vehicleValues = Array.from('event.target');
+                const vehicle = vehicleValues.map((item) => item);
+      const data = { vehicle };
+      localStorage.setItem('formData',JSON.stringify(data));           
+      const getFormdata = (key) => {  
+        return localStorage.getItem(key);    }
+        const formData = JSON.parse(getFormdata ('formData'));
