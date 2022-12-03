@@ -167,6 +167,12 @@ let cards = JSON.parse(cardssuper);
              
           
             });
+            window.addEventListener('click', function(event) {
+              const target = event.target; 
+              event.target = document.querySelector('.star-rating__ico');
+              event.target.style.color= "red";
+            }
+    
+          );            
             
-            
-                 
+         

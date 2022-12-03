@@ -201,7 +201,7 @@ body {
   float: right;
   padding-left: 2px;
   cursor: pointer;
-  color: #ffb300;
+  color: #fff0cc;
 }
 .star-rating__ico:last-child {
   padding-left: 0;
@@ -209,8 +209,11 @@ body {
 .star-rating__input {
   display: none;
 }
-.star-rating__ico:hover:before,
+/*.star-rating__ico:hover:before,
 .star-rating__ico:hover ~ .star-rating__ico:before,
 .star-rating__input:checked ~ .star-rating__ico:before {
   content: "\f005";
 }
+.star-rating__ico:checked {
+  content: "\f005";
+}*/
