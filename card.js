@@ -159,10 +159,10 @@ document.addEventListener("click", function (event) {
 
 const getFormData = () => {
   const getredstarslabel = Array.from(
-    document.querySelectorAll(`[name="rating"]`)
+    document.querySelectorAll(`label[style="color: red;"]`)
   );
   const redstarslabels = getredstarslabel.forEach((item) => {
-    item.style.color = "red";
+    item.style.color == red ;
   });
   const redstarslabel = redstarslabels.map((item) => item.style.color);
   const data = {redstarslabel};
@@ -170,7 +170,7 @@ const getFormData = () => {
 };
 const setFormData = (data) => {
   for (const key in data) {
-    const multiple = document.querySelectorAll(`[style=color: ${key};]`);
+    const multiple = document.querySelectorAll(`label[style="color: ${key};"]`);
     multiple.forEach((item) => {
 
     if (
