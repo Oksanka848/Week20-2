@@ -157,6 +157,7 @@ document.addEventListener("click", function (event) {
   event.target.style.color = "red";
 });
 
+document.addEventListener("click", function () {
 const getFormData = () => {
   const getredstarslabel = Array.from(
     document.querySelectorAll(`label[style="color: red;"]`)
@@ -191,6 +192,7 @@ const saveDataToLS = (e) => {
   const data = getFormData();
 
   localStorage.setItem("formData", JSON.stringify(data));
+  saveDataToLS(e);
 };
 
 const getDataFromLS = (key) => {
@@ -200,3 +202,4 @@ const getDataFromLS = (key) => {
 const formData = JSON.parse(getDataFromLS("formData"));
 
 setFormData(formData);
+});
